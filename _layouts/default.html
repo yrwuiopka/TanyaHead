@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+</head>
+<body>
+    {% include header.html %}
+    
+
+    <nav class="newspaper-nav">
+        <div class="container">
+            <ul>
+                <li><a href="{{ '/' | relative_url }}">Репортаж</a></li>
+                <li><a href="{{ '/psychology.html' | relative_url }}">По следу лжи</a></li>
+                <li><a href="{{ '/interview.html' | relative_url }}">Интервью / Вопросы</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        <div class="side-plate left-plate"></div>
+        <div class="side-plate right-plate"></div>
+        
+        <main class="main-container" id="main-container">
+            {{ content }}
+        </main>
+        
+        {% include footer.html %}
+    </div>
+
+    <script src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
+</body>
+</html>

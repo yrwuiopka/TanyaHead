@@ -1,0 +1,312 @@
+---
+layout: default
+title: Доска расследования - улики и версии
+---
+
+<div class="container psychology-page">
+    <h2 class="reveal active" style="font-family: 'Playfair Display', serif; font-size: 2rem; border-left: 6px solid var(--accent-red); padding-left: 1rem; margin-bottom: 2rem;">ДОСКА РАССЛЕДОВАНИЯ</h2>
+    
+   
+    <div class="detective-board" id="detectiveBoard">
+        <canvas id="redThreadCanvas" class="red-thread-canvas"></canvas>
+
+   
+        <div class="board-center-photo" id="centerPhoto">
+            <div class="photo-frame center-frame">
+                <img src="/assets/images/таня.jpg" alt="Таня Хэд" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\' viewBox=\'0 0 200 200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23333\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23b52b2b\' font-size=\'14\'%3EТаня Хэд%3C/text%3E%3C/svg%3E'">
+                <div class="photo-caption">Таня Хэд (Алисия Эстеве)</div>
+            </div>
+        </div>
+
+       
+        <div class="board-photo" data-photo="1">
+            <div class="photo-frame">
+                <img src="/assets/images/M.jpg" alt="Merrill Lynch" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'150\' viewBox=\'0 0 200 150\'%3E%3Crect width=\'200\' height=\'150\' fill=\'%23333\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23b52b2b\' font-size=\'14\'%3EMerrill Lynch%3C/text%3E%3C/svg%3E'">
+                <div class="photo-caption">Merrill Lynch</div>
+            </div>
+            <div class="popup-text">
+                <div class="popup-version">
+                    <h4>🗣️ Версия Тани:</h4>
+                    <p>Я работала в Merrill Lynch на 93-м этаже Южной башни. Каждый день ходила в офис, у меня была ассистентка.</p>
+                </div>
+                <div class="popup-reality">
+                    <h4>✅ Реальность:</h4>
+                    <p>Компания Merrill Lynch не имела офиса в башнях WTC. Сотрудница с именем Таня Хэд никогда там не работала.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="board-photo" data-photo="2">
+            <div class="photo-frame">
+                <img src="/assets/images/муж2.jpg" alt="Жених Дейв" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'150\' viewBox=\'0 0 200 150\'%3E%3Crect width=\'200\' height=\'150\' fill=\'%23333\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23b52b2b\' font-size=\'14\'%3EЖених Дейв%3C/text%3E%3C/svg%3E'">
+                <div class="photo-caption">Жених Дейв</div>
+            </div>
+            <div class="popup-text">
+                <div class="popup-version">
+                    <h4>🗣️ Версия Тани:</h4>
+                    <p>Мой жених Дейв работал в Северной башне и погиб. Мы собирались пожениться, у нас был ретривер Элвис. Я основала детский фонд его имени.</p>
+                </div>
+                <div class="popup-reality">
+                    <h4>✅ Реальность:</h4>
+                    <p>Семья Дейва никогда не слышала о Тане. Детский фонд «Дейва» не существовал. Пса Элвиса никто не видел. Дейв не был её женихом — она его выдумала.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="board-photo" data-photo="3">
+            <div class="photo-frame">
+                <img src="/assets/images/шрам.jpg" alt="Шрам" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'150\' viewBox=\'0 0 200 150\'%3E%3Crect width=\'200\' height=\'150\' fill=\'%23333\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23b52b2b\' font-size=\'14\'%3EШрам%3C/text%3E%3C/svg%3E'">
+                <div class="photo-caption">Шрам на руке</div>
+            </div>
+            <div class="popup-text">
+                <div class="popup-version">
+                    <h4>🗣️ Версия Тани:</h4>
+                    <p>Этот шрам я получила при пожаре в башне, когда ползла через огонь. Он постоянно напоминает мне о том аде.</p>
+                </div>
+                <div class="popup-reality">
+                    <h4>✅ Реальность:</h4>
+                    <p>Шрам имеет ровные края, что исключает ожог. Эксперты подтвердили: след от автомобильной аварии.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="board-photo" data-photo="4">
+            <div class="photo-frame">
+                <img src="/assets/images/человек.jpg" alt="Уэллс Кроутер" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'150\' viewBox=\'0 0 200 150\'%3E%3Crect width=\'200\' height=\'150\' fill=\'%23333\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23b52b2b\' font-size=\'14\'%3EКрасная бандана%3C/text%3E%3C/svg%3E'">
+                <div class="photo-caption">Человек в красной бандане</div>
+            </div>
+            <div class="popup-text">
+                <div class="popup-version">
+                    <h4>🗣️ Версия Тани:</h4>
+                    <p>Меня спас Уэллс Кроутер — он потушил мою руку своей красной банданой. Я говорила с его родителями.</p>
+                </div>
+                <div class="popup-reality">
+                    <h4>✅ Реальность:</h4>
+                    <p>Уэллс спас 18 человек, но Тани среди них не было. Она присвоила его подвиг задним числом.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="board-photo" data-photo="5">
+            <div class="photo-frame">
+                <img src="/assets/images/кольцо.jpg" alt="Кольцо" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'150\' viewBox=\'0 0 200 150\'%3E%3Crect width=\'200\' height=\'150\' fill=\'%23333\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23b52b2b\' font-size=\'14\'%3EКольцо%3C/text%3E%3C/svg%3E'">
+                <div class="photo-caption">Кольцо умирающего</div>
+            </div>
+            <div class="popup-text">
+                <div class="popup-version">
+                    <h4>🗣️ Версия Тани:</h4>
+                    <p>Умирающий незнакомец протянул мне кольцо для жены.</p>
+                </div>
+                <div class="popup-reality">
+                    <h4>✅ Реальность:</h4>
+                    <p>История не подтверждена. Семья человека с кольцом не найдена.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="board-photo" data-photo="6">
+            <div class="photo-frame">
+                <img src="/assets/images/б.jpg" alt="Больница" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'150\' viewBox=\'0 0 200 150\'%3E%3Crect width=\'200\' height=\'150\' fill=\'%23333\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23b52b2b\' font-size=\'14\'%3EБольница%3C/text%3E%3C/svg%3E'">
+                <div class="photo-caption">Больница</div>
+            </div>
+            <div class="popup-text">
+                <div class="popup-version">
+                    <h4>🗣️ Версия Тани:</h4>
+                    <p>Шесть дней в ожоговом отделении, инвалидная коляска.</p>
+                </div>
+                <div class="popup-reality">
+                    <h4>✅ Реальность:</h4>
+                    <p>Не назвала ни одной больницы. Медицинских записей нет.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="board-photo" data-photo="7">
+            <div class="photo-frame">
+                <img src="/assets/images/башни.jpg" alt="Барселона" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'150\' viewBox=\'0 0 200 150\'%3E%3Crect width=\'200\' height=\'150\' fill=\'%23333\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23b52b2b\' font-size=\'14\'%3EБарселона%3C/text%3E%3C/svg%3E'">
+                <div class="photo-caption">ESADE, Барселона</div>
+            </div>
+            <div class="popup-text">
+                <div class="popup-version">
+                    <h4>🗣️ Версия Тани:</h4>
+                    <p>Я была в башне 11 сентября.</p>
+                </div>
+                <div class="popup-reality">
+                    <h4>✅ Реальность:</h4>
+                    <p>В тот день она сдавала экзамены в Барселоне. Приехала в США только в 2003 году.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="board-photo" data-photo="9">
+            <div class="photo-frame">
+                <img src="/assets/images/самолет.jpg" alt="Противоречия" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'150\' viewBox=\'0 0 200 150\'%3E%3Crect width=\'200\' height=\'150\' fill=\'%23333\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23b52b2b\' font-size=\'14\'%3EПротиворечия%3C/text%3E%3C/svg%3E'">
+                <div class="photo-caption">За мгновение до взрыва</div>
+            </div>
+            <div class="popup-text">
+                <div class="popup-version">
+                    <h4>🗣️ Версия Тани:</h4>
+                    <p>За мгновение до взрыва в южной башне Таня утверждала, что видела крыло самолета в окне за несколько секунд до взрыва.</p>
+                </div>
+                <div class="popup-reality">
+                    <h4>✅ Реальность:</h4>
+                    <p>Из-за планировки здания, женщина не могла видеть крыло самолета невозможным.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script>
+  
+    function positionCluesRadially() {
+        const board = document.getElementById('detectiveBoard');
+        const centerPhoto = document.getElementById('centerPhoto');
+        const clues = document.querySelectorAll('.board-photo');
+        if (!board || !centerPhoto || clues.length === 0) return;
+
+        const boardRect = board.getBoundingClientRect();
+        const centerRect = centerPhoto.getBoundingClientRect();
+        
+    
+        const centerX = centerRect.left + centerRect.width / 2 - boardRect.left;
+        const centerY = centerRect.top + centerRect.height / 2 - boardRect.top;
+        
+
+        const radius = Math.min(boardRect.width, boardRect.height) * 0.4;
+        const angleStep = (Math.PI * 2) / clues.length;
+        
+        clues.forEach((clue, index) => {
+            const angle = index * angleStep;
+            const x = centerX + radius * Math.cos(angle);
+            const y = centerY + radius * Math.sin(angle);
+            
+            clue.style.position = 'absolute';
+            clue.style.left = (x - clue.offsetWidth / 2) + 'px';
+            clue.style.top = (y - clue.offsetHeight / 2) + 'px';
+            clue.style.margin = '0';
+        });
+        
+    
+        window._radialData = { centerX, centerY, radius, clues };
+    }
+    
+
+    function drawRadialThreads() {
+        const board = document.getElementById('detectiveBoard');
+        const canvas = document.getElementById('redThreadCanvas');
+        if (!board || !canvas) return;
+        
+        const clues = document.querySelectorAll('.board-photo');
+        if (clues.length === 0) return;
+        
+        const boardRect = board.getBoundingClientRect();
+        const centerPhoto = document.getElementById('centerPhoto');
+        if (!centerPhoto) return;
+        const centerRect = centerPhoto.getBoundingClientRect();
+        const center = {
+            x: centerRect.left + centerRect.width / 2 - boardRect.left,
+            y: centerRect.top + centerRect.height / 2 - boardRect.top
+        };
+        
+        canvas.width = board.clientWidth;
+        canvas.height = board.clientHeight;
+        canvas.style.width = board.clientWidth + 'px';
+        canvas.style.height = board.clientHeight + 'px';
+        const ctx = canvas.getContext('2d');
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        ctx.beginPath();
+        ctx.strokeStyle = '#b52b2b';
+        ctx.lineWidth = 2.5;
+        ctx.setLineDash([6, 8]);
+        
+        clues.forEach(clue => {
+            const rect = clue.getBoundingClientRect();
+            const clueCenter = {
+                x: rect.left + rect.width / 2 - boardRect.left,
+                y: rect.top + rect.height / 2 - boardRect.top
+            };
+            ctx.beginPath();
+            ctx.moveTo(center.x, center.y);
+            ctx.lineTo(clueCenter.x, clueCenter.y);
+            ctx.stroke();
+        });
+        
+        ctx.setLineDash([]);
+        clues.forEach(clue => {
+            const rect = clue.getBoundingClientRect();
+            const clueCenter = {
+                x: rect.left + rect.width / 2 - boardRect.left,
+                y: rect.top + rect.height / 2 - boardRect.top
+            };
+            ctx.beginPath();
+            ctx.arc(clueCenter.x, clueCenter.y, 4, 0, 2 * Math.PI);
+            ctx.fillStyle = '#b52b2b';
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(clueCenter.x, clueCenter.y, 2, 0, 2 * Math.PI);
+            ctx.fillStyle = '#ff8888';
+            ctx.fill();
+        });
+        // Центральный узел
+        ctx.beginPath();
+        ctx.arc(center.x, center.y, 6, 0, 2 * Math.PI);
+        ctx.fillStyle = '#b52b2b';
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(center.x, center.y, 3, 0, 2 * Math.PI);
+        ctx.fillStyle = '#ffaaaa';
+        ctx.fill();
+    }
+    
+    function positionPopups() {
+        const popups = document.querySelectorAll('.popup-text');
+        popups.forEach(popup => {
+            popup.style.left = '';
+            popup.style.right = '';
+            popup.style.top = '';
+            popup.style.bottom = '';
+            popup.style.transform = '';
+            const parent = popup.parentElement;
+            const rect = parent.getBoundingClientRect();
+            const popupRect = popup.getBoundingClientRect();
+            const viewportWidth = window.innerWidth;
+            let showRight = (rect.right + popupRect.width + 20 <= viewportWidth);
+            if (showRight) {
+                popup.style.left = '100%';
+                popup.style.right = 'auto';
+                popup.style.transform = 'translateY(-50%)';
+            } else {
+                popup.style.left = 'auto';
+                popup.style.right = '100%';
+                popup.style.transform = 'translateY(-50%)';
+            }
+            popup.style.top = '50%';
+            popup.style.bottom = 'auto';
+        });
+    }
+    
+    window.addEventListener('load', () => {
+        positionCluesRadially();
+        drawRadialThreads();
+        positionPopups();
+        window.addEventListener('resize', () => {
+            positionCluesRadially();
+            drawRadialThreads();
+            positionPopups();
+        });
+        const board = document.getElementById('detectiveBoard');
+        const observer = new ResizeObserver(() => {
+            positionCluesRadially();
+            drawRadialThreads();
+            positionPopups();
+        });
+        if (board) observer.observe(board);
+        document.querySelectorAll('.board-photo').forEach(photo => {
+            photo.addEventListener('mouseenter', positionPopups);
+        });
+    });
+</script>
